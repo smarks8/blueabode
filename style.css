@@ -3,10 +3,10 @@
 
 body {
   display: block;
-  font-family: 'Open Sans', sans-serif;
-  color: white; }
+  font-family: 'Open Sans', sans-serif; }
 
 header {
+  color: white;
   font-size: 16px;
   font-weight: 600;
   position: fixed;
@@ -75,7 +75,7 @@ header {
       -webkit-transition-duration: 0.4s;
       transition-duration: 0.4s; }
       header .nav-container .primary_btn:hover {
-        background-color: #00b2a9;
+        background-color: #ff7c4d;
         cursor: pointer; }
 
 main {
@@ -85,6 +85,7 @@ main {
   left: 0; }
   main .main-header {
     background-color: #00b2a9;
+    color: white;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -143,3 +144,41 @@ main {
       -moz-background-size: cover;
       -webkit-background-size: cover;
       background-size: cover; }
+  main .main-about {
+    padding: 5rem 0; }
+    main .main-about__content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      main .main-about__content-header {
+        font-weight: 100;
+        font-size: 2rem;
+        color: #585858; }
+      main .main-about__content-list {
+        width: 100%;
+        flex: 1;
+        padding: 1rem 0;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch; }
+        main .main-about__content-list-item {
+          width: 30%;
+          border-radius: 3px;
+          padding: 2rem 1.5rem;
+          background-color: rgba(164, 164, 164, 0.1);
+          -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s; }
+          main .main-about__content-list-item h3 {
+            color: orangered;
+            font-size: 1.5rem;
+            font-weight: bold; }
+          main .main-about__content-list-item:hover {
+            background-color: rgba(164, 164, 164, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+            border-radius: 3px; }
+  main .main-reviews {
+    border: 3px solid orangered;
+    display: flex; }

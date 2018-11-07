@@ -7,6 +7,8 @@ $white: white;
 $gray: #a4a4a4;
 $gray-light:#f1f1f1;
 $gray-dark: #585858;
+$orangered: orangered;
+$orangered-light: #ff7c4d;
 
 
 * {
@@ -16,10 +18,10 @@ $gray-dark: #585858;
 body {
   display: block;
   font-family: 'Open Sans', sans-serif;
-  color: $white;
 }
 
 header {
+  color: $white;
   font-size: 16px;
   font-weight: 600;
   position: fixed;
@@ -118,7 +120,7 @@ header {
       transition-duration: 0.4s;
 
       &:hover {
-        background-color: $primary-green;
+        background-color: $orangered-light;
         cursor: pointer;
       }
     }
@@ -133,6 +135,7 @@ main {
 
   .main-header{
     background-color: $primary-green;
+    color: $white;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -204,5 +207,60 @@ main {
       -webkit-background-size: cover;
       background-size: cover;
     }
+  }
+
+  .main-about{
+    padding: 5rem 0;
+
+    &__content {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      &-header {
+        font-weight:100;
+        font-size: 2rem;
+        color: $gray-dark;
+      }
+
+      &-list {
+        width: 100%;
+        flex: 1;
+        padding: 1rem 0;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+
+        &-item{
+          width: 30%;
+          border-radius: 3px;
+          padding: 2rem 1.5rem;
+          background-color: rgba($gray,0.1);
+          -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+
+          h3 {
+            color: orangered;
+            font-size: 1.5rem;
+            font-weight: bold;
+          }
+
+          &:hover {
+            background-color: rgba($gray,0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            transform: translateY(-5px);
+            border-radius: 3px;
+          }
+        }
+      }
+    }
+  }
+
+  .main-reviews {
+    border: 3px solid $orangered;
+    display: flex;
   }
 }
