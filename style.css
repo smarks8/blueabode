@@ -149,7 +149,7 @@ main {
       -webkit-background-size: cover;
       background-size: cover; }
   main .main-about {
-    padding: 5rem 0; }
+    padding: 5rem 0 3rem 0; }
     main .main-about__content {
       display: flex;
       justify-content: center;
@@ -184,7 +184,7 @@ main {
             transform: translateY(-5px);
             border-radius: 3px; }
   main .main-reviews {
-    padding: 3rem 0;
+    padding: 1rem 0;
     margin-bottom: 5%;
     display: flex;
     flex-direction: column;
@@ -195,9 +195,10 @@ main {
       color: #009991; }
     main .main-reviews p {
       background-color: #f1f1f1;
+      margin: 2rem 0 3rem 0;
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-      padding: 1rem;
-      width: 50%;
+      padding: 1rem 5rem;
+      width: 65%;
       position: relative;
       z-index: 5; }
       main .main-reviews p::before {
@@ -211,18 +212,32 @@ main {
         font-family: sans-serif;
         z-index: -1; }
   main .main-last {
-    padding: 5rem;
+    padding: 3rem;
     display: flex;
     align-items: center;
     flex-direction: column;
     color: white;
-    line-height: 5rem;
+    line-height: 3rem;
     background-color: #00b2a9; }
     main .main-last .media-icons {
-      padding-top: 3rem; }
+      padding-top: 2rem; }
       main .main-last .media-icons a {
         fill: white; }
         main .main-last .media-icons a .linkedin-logo:hover {
           fill: navy; }
         main .main-last .media-icons a .github-logo:hover {
           fill: black; }
+
+@media only screen and (max-width: 815px) {
+  header {
+    display: flex; }
+    header .nav-list a, header .primary_btn {
+      display: none; }
+  main {
+    display: block; }
+  .main-about__content-list {
+    flex-direction: column;
+    align-items: center !important; }
+    .main-about__content-list-item {
+      width: 90% !important;
+      margin: 1rem; } }
