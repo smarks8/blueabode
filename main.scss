@@ -160,7 +160,7 @@ main {
 
       &-hero-header {
         font-size: 5rem;
-        line-height: 1;
+        line-height: 1.2;
         margin: 15px 0;
         padding-top: 4rem;
         letter-spacing: .2rem;
@@ -323,11 +323,11 @@ main {
           fill: $white;
 
           .linkedin-logo:hover {
-            fill: navy;
+            fill: #1273B0;
           }
 
           .github-logo:hover {
-            fill: black;
+            fill: #24292e;
           }
         }
 
