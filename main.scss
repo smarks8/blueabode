@@ -139,6 +139,11 @@ main {
     width: 75%;
   }
 
+  .section-title {
+    padding: 0 25px;
+    text-align: center;
+  }
+
   .main-header{
     background-color: $primary-green;
     color: $white;
@@ -233,12 +238,9 @@ main {
 
       &-list {
         width: 100%;
-        flex: 1;
-        padding: 1rem 0;
         margin-top: 1rem;
         display: flex;
         justify-content: space-around;
-        align-items: stretch;
 
         &-item{
           width: 30%;
@@ -276,6 +278,7 @@ main {
       font-weight:100;
       font-size: 2rem;
       color: $primary-green-dark;
+      margin-bottom: 50px;
     }
 
     p{
@@ -301,38 +304,36 @@ main {
     }
 
     span {
-      margin-top: 10px;
+      margin-top: 20px;
       padding: 0 20px;
     }
   }
 
     .main-last {
-      padding: 3rem;
+      padding: 2rem 0 5rem;
       display: flex;
       align-items: center;
       flex-direction: column;
       color: white;
-      line-height: 3rem;
+      line-height: 2rem;
       background-color: $primary-green;
       text-align: center;
 
-      .media-icons  {
-        padding-top: 2rem;
+      .media-icons {
+        padding: 2rem 0 2rem;
 
-        a {
-          fill: $white;
+          a {
+            fill: $white;
 
-          .linkedin-logo:hover {
-            fill: #1273B0;
-          }
-
-          .github-logo:hover {
-            fill: #24292e;
+            &.linkedin-logo:hover {
+              fill: #1273B0;
+            }
+            &.github-logo:hover {
+              fill: #24292e;
+            }
           }
         }
-
       }
-    }
 }
 
 @media screen and (max-width: 815px) {
@@ -355,16 +356,14 @@ main {
       }
     }
 
-
     .main-about__content{
-
 
       &-list {
         flex-direction: column;
 
         &-item {
-          width: 90%;
-          margin: 1rem;
+          width: 100%;
+          margin: 10px;
           box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         }
       }
@@ -379,12 +378,7 @@ footer {
   padding: 10px 0;
   margin: 0;
   left: 0;
-  background-color: orangered;
+  background-color: $gray-light;
   width: 100%;
   z-index: 2;
-}
-
-.section-title {
-  padding: 0 25px;
-  text-align: center;
 }
